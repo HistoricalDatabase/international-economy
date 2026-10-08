@@ -3,69 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Jeffersonian Era</title>
-  <style>
-    body {
-      background-color: #0f172a;
-      color: #f8fafc;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      line-height: 1.7;
-    }
-    header {
-      background-color: #1e293b;
-      padding: 20px;
-      border-bottom: 1px solid #334155;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    header a { color: #38bdf8; text-decoration: none; font-weight: 600; }
-    .article-container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #1e293b;
-      padding: 40px;
-      border-radius: 12px;
-      border: 1px solid #334155;
-    }
-    h1 { font-size: 28px; color: #ffffff; margin-top: 0; }
-    h2 { font-size: 20px; color: #38bdf8; margin-top: 30px; }
-    p, li { color: #94a3b8; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 10px; }
-    .footer-nav {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #334155;
-    }
-  </style>
+  <title>The Jeffersonian Era | History Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a href="index.html">← Back to Home</a>
-    <span>Honors US History</span>
+
+  <header class="site-header">
+    <div class="brand">NIKITA SAVRYHA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jefferson.html">Jeffersonian Era</a>
+      <a href="jackson.html">Jacksonian Era</a>
+    </nav>
   </header>
 
-  <div class="article-container">
-    <h1>The Jeffersonian Era (1801–1825)</h1>
-    <p>During the Jeffersonian period, the United States began to view itself not merely as a loose coalition of sovereign states, but as a rising continental power. Thomas Jefferson championed an "Empire of Liberty" rooted in agrarian virtue and westward expansion.</p>
+  <main>
+    <section class="section" style="grid-template-columns: 1fr;">
+      <div>
+        <p class="eyebrow">PERIOD 4: 1801–1825</p>
+        <h2>The Jeffersonian Era</h2>
+        <p class="large-copy">During the Jeffersonian period, the United States began to view itself not merely as a loose coalition of sovereign states, but as a rising continental power.</p>
+        
+        <div style="margin-top: 40px; line-height: 1.8; color: #555;">
+          <h3 style="color: #111; font-size: 22px;">Key Milestones of National Development</h3>
+          <ul style="padding-left: 20px;">
+            <li><strong>The Louisiana Purchase (1803):</strong> Acquiring 828,000 square miles from France doubled the nation's size and secured control of the Mississippi River, giving citizens a shared vision of a continental "Empire of Liberty."</li>
+            <li><strong>The War of 1812:</strong> Often called the "Second War of Independence," successfully fighting the British to a stalemate fostered an immense wave of patriotism and proved the republic's permanence.</li>
+            <li><strong>The Era of Good Feelings:</strong> Following the conflict, temporary political consensus under President James Monroe minimized partisan strife, solidifying national unity.</li>
+          </ul>
+        </div>
 
-    <h2>Key Milestones of National Development</h2>
-    <ul>
-      <li><strong>The Louisiana Purchase (1803):</strong> By acquiring 828,000 square miles from France and doubling the nation's size, the U.S. secured the Mississippi River and gave citizens a shared destiny of continental expansion.</li>
-      <li><strong>The War of 1812:</strong> Often called the "Second War of Independence," successfully fighting the British to a stalemate fostered an immense wave of patriotism and proved the republic's permanence.</li>
-      <li><strong>The Era of Good Feelings:</strong> Following the conflict, temporary political consensus under President James Monroe minimized partisan strife, solidifying national unity.</li>
-    </ul>
+        <div class="actions" style="margin-top: 40px;">
+          <a href="index.html" class="button secondary">← Back to Home</a>
+          <a href="jackson.html" class="button primary">Next: Jacksonian Era →</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="footer-nav">
-      <a href="index.html">← Home</a>
-      <a href="jackson.html">Next: Jacksonian Era →</a>
-    </div>
-  </div>
+  <footer>
+    <span>© 2026 Nikita Savryha</span>
+    <span>Honors US History Portfolio</span>
+  </footer>
+
 </body>
 </html>
