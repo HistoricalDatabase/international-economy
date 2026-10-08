@@ -5,51 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>History Project | Jeffersonian & Jacksonian Eras</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* This styling creates the clickable navigation and smooth scrolling */
+    html {
+      scroll-behavior: smooth; 
+    }
+    nav {
+      background-color: #1a1a1a;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background-color: #333;
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .page-section {
+      padding: 80px 20px;
+      min-height: 80vh; /* Makes each section fill most of the screen */
+      border-bottom: 2px solid #eaeaea;
+    }
+    .content-box {
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+    /* Distinct background colors to separate the sections */
+    #intro { background-color: #ffffff; }
+    #jefferson { background-color: #f8f9fa; }
+    #jackson { background-color: #ffffff; }
+    #conclusion { background-color: #f8f9fa; }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#">HONORS US HISTORY</a>
-  </header>
+
+  <!-- The Interactive Navigation Bar -->
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#jefferson">Jeffersonian Era</a>
+    <a href="#jackson">Jacksonian Era</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
 
   <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">By Nikita Savryha</p>
-        <h1>Forging a Nation: The Jeffersonian and Jacksonian Periods</h1>
+    <!-- Section 1: Introduction -->
+    <section id="intro" class="page-section">
+      <div class="content-box">
+        <h1>Forging a Nation</h1>
+        <p><strong>By Nikita Savryha | Honors US History</strong></p>
         <p>An analysis of how the United States developed its national identity, expanded its borders, and transformed its democracy from 1800 to 1840.</p>
+        <p><em>Click the buttons in the menu above to explore the different eras.</em></p>
       </div>
     </section>
 
-    <section class="section">
-      <div>
-        <h2>The Jeffersonian Era: Expansion and Identity (1801–1825)</h2>
-        <p>During the Jeffersonian period, the United States began to view itself not just as a collection of states, but as a growing continental power. Thomas Jefferson championed the ideal of an "Empire of Liberty" driven by independent farmers.</p>
+    <!-- Section 2: Jeffersonian -->
+    <section id="jefferson" class="page-section">
+      <div class="content-box">
+        <h2>The Jeffersonian Era (1801–1825)</h2>
+        <p>During the Jeffersonian period, the United States began to view itself not just as a collection of states, but as a growing continental power. Thomas Jefferson championed the ideal of an "Empire of Liberty."</p>
         <ul>
-          <li><strong>The Louisiana Purchase (1803):</strong> By doubling the size of the country, the U.S. gained physical vastness and resources that forged a sense of shared national destiny and westward expansion.</li>
-          <li><strong>The War of 1812:</strong> Often called the "Second War of Independence," surviving conflict with Great Britain sparked a massive wave of nationalism and proved the young republic could defend its sovereignty.</li>
+          <li><strong>The Louisiana Purchase (1803):</strong> By doubling the size of the country, the U.S. gained physical vastness and resources that forged a sense of shared national destiny.</li>
+          <li><strong>The War of 1812:</strong> Often called the "Second War of Independence," surviving conflict with Great Britain sparked massive nationalism.</li>
           <li><strong>The Era of Good Feelings:</strong> Following the war, a temporary end to the two-party system fostered a brief period of deep national unity.</li>
         </ul>
+      </div>
+    </section>
 
-        <br>
-
-        <h2>The Jacksonian Era: Mass Democracy and Federal Power (1829–1837)</h2>
+    <!-- Section 3: Jacksonian -->
+    <section id="jackson" class="page-section">
+      <div class="content-box">
+        <h2>The Jacksonian Era (1829–1837)</h2>
         <p>The Jacksonian period drastically shifted the concept of "the nation" to include the voice of the common man, while simultaneously reinforcing the supreme power of the federal government.</p>
         <ul>
-          <li><strong>Expansion of Democracy:</strong> Property requirements for voting were largely abolished, bringing universal white male suffrage. The "nation" became defined by mass political participation rather than an elite ruling class.</li>
-          <li><strong>The Nullification Crisis (1832):</strong> When South Carolina tried to nullify a federal tariff, Andrew Jackson firmly established that the federal union was unbreakable and that national laws superseded state defiance.</li>
-          <li><strong>The Market Revolution:</strong> Innovations like canals, steamboats, and early railroads physically connected the North, South, and West, creating an interdependent national economy.</li>
+          <li><strong>Expansion of Democracy:</strong> Property requirements for voting were largely abolished. The "nation" became defined by mass political participation rather than an elite ruling class.</li>
+          <li><strong>The Nullification Crisis (1832):</strong> When South Carolina tried to nullify a federal tariff, Andrew Jackson firmly established that the federal union was unbreakable.</li>
+          <li><strong>The Market Revolution:</strong> Innovations like canals and steamboats physically connected the North, South, and West, creating an interdependent national economy.</li>
         </ul>
+      </div>
+    </section>
 
-        <br>
-
+    <!-- Section 4: Conclusion -->
+    <section id="conclusion" class="page-section">
+      <div class="content-box">
         <h2>Conclusion</h2>
-        <p>Through territorial expansion, the survival of foreign wars, the democratization of voting, and the assertion of federal supremacy, the United States transitioned from a fragile experiment into a solidified, interdependent nation during these two pivotal eras.</p>
+        <p>Through territorial expansion, the survival of foreign wars, the democratization of voting, and the assertion of federal supremacy, the United States transitioned from a fragile experiment into a solidified, interdependent nation.</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 Nikita Savryha</span>
-  </footer>
 </body>
 </html>
